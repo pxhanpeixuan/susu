@@ -1,0 +1,131 @@
+body{
+    background: url(../../src/img/火狐截图_2019-09-04T02-33-32.624Z.png)
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "黑体";
+}
+ 
+ul,li {
+	list-style: none;
+}
+input {
+	background-color: #fff;
+	outline: none;
+	color:#999;
+}
+
+#loginOrRegister {
+    position: absolute;
+    top: 300px;
+    right: 110px;
+	background-color: #fff;
+	width: 500px;
+	margin-left: -250px;
+	margin-top: -150px;
+	border-radius: 10px;
+	text-align: center;
+	.title {
+		height: 45px;
+		line-height: 45px;
+		.title .register{
+			padding: 10px 0;
+			color: black;
+			font-size: 25px;
+			cursor: pointer;	
+		}
+		.title span:hover{
+			color: deeppink;
+		}
+	}
+	.submit input {
+		display: inline-block;
+		width: 300px;
+		background-color: rgb(255, 109, 11);
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		height: 40px;
+		line-height: 40px;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-left: 32px;
+	}
+	.submit input:hover{
+		background-color: rgb(220, 109, 11);
+	}
+	.box {
+		padding-left: 30px;
+	}
+	.box li {
+    	line-height: 44px;
+    	width: 100%;
+    	overflow: hidden;
+	}
+	.box li label {
+		width: 68px;
+		height: 50px;
+		float: left;
+		line-height: 50px;
+		text-align: right;
+		padding-right: 20px;
+	}	
+	.box li input{
+		padding: 6px 0;
+		font-size: 16px;
+		width: 296px;
+		height: 28px;
+		line-height: 28px;
+		border: 1px solid #dddddd;
+		text-indent: 0.5em;
+		float: left;
+		border-radius: 5px;
+	}
+	.box li .sradd {
+		width: 148px;
+		text-indent: 4px;
+		font-size: 14px;
+	}
+	.authCode {
+		background: #ff7200;
+		text-align: center;
+		line-height: 42px;
+		color: #fff;
+		border-radius: 5px;
+		font-size: 20px;
+		letter-spacing: 3px;
+	
+		display: inline;
+		cursor: pointer;
+		margin-left: 20px;
+	}
+	.sendaAuthCode{
+		background: black;
+	   text-align: center;
+	   line-height: 42px;
+	   color: #fff;
+	   border-radius: 5px;
+	   display: block;
+	   cursor: pointer;
+	   margin-left: 20px;
+	   width: 56px;
+	   float: right;
+	   margin-right: 120px;
+	   overflow: hidden;
+   }
+   .error {
+	clear: both;
+	display: block;
+	color: red;
+	padding-left: 90px;
+	padding-bottom: 5px;
+	height: 20px;
+	float: left;
+	font-size: 16px;
+	line-height: 20px;
+} 
+}
+
+  

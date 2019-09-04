@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金立手机登录页</title>
+    <link rel="stylesheet" href="../css/denglu.min.css">
+    <script src="../js/jquery-1.12.4.min.min.js"></script>
+    <script src="../js/denglu.min.js"></script>
+</head>
+<body>
+<div class="denglu">
+    <form action="" method="" class="loginForm">
+        <ul class="box box1">
+            <li>
+                <label for="account">账号</label>
+                <input type="text" placeholder="请输入您的账号（即手机号）" class="account" id="account" />
+                <span class="error"></span>
+            </li>
+            <li>
+                <label for="password">密码</label>
+                <input type="password" class="password" id="password" placeholder="请输入密码" />
+                <span class="error"></span>
+            </li>
+            <li>
+                <label for="authCode">验证码</label>
+                <input type="text" class="sradd photokey" id="authCode" placeholder="请输入收到的验证码" />
+                <span class="add authCode"></span>
+                <span class="error"></span>
+            </li>
+        </ul>
+            <div class="submit">
+                <input type="button" value="立即登录"/>
+            </div>
+            <p style="text-align: center">
+                没有账号请<a href="zhuce.html">注册！</a>
+            </p>
+            <a href="zhuce.html"></a>
+    </form>
+</div>
+</body>
+</html>

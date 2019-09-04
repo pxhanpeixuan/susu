@@ -1,0 +1,142 @@
+//售后导航栏
+.shouhou{
+    border-bottom: 1px #eaeaea solid;
+    padding-bottom: 40px;
+    height: 47px;
+    margin-top: 36px;
+    ul{
+        width: 1190px;
+        margin: 0 auto;
+        li{
+            float: left;
+            width: 291px;
+            .tuihuo{
+                display: block;
+                width: 46px;
+                height: 46px;
+                background: url(../../src/img/spirite.png);
+                background-position: 0px -60px;
+                float: left;
+                margin-right: 10px;
+                
+            }
+            b{
+                font-weight: normal;
+            }
+            .huanhuo{
+                display: block;
+                width: 46px;
+                height: 46px;
+                background: url(../../src/img/spirite.png);
+                background-position: -46px -60px;
+                float: left;
+            }
+            .yunfei{
+                display: block;
+                width: 46px;
+                height: 46px;
+                background: url(../../src/img/spirite.png);
+                background-position: -92px -60px;
+                float: left;
+            }
+            .fuwu{
+                display: block;
+                width: 46px;
+                height: 46px;
+                background:url(../../src/img/spirite.png);
+                background-position: -138px -60px;
+                float: left;
+            }
+        }
+        // &:hover{
+        //     color: red;
+        // }
+    }
+}
+//底部导航栏
+.guanyu{
+    padding-top: 30px;
+    width: 1190px;
+    height: 291px;
+    margin: 0 auto;
+    line-height: 33px;
+    padding-bottom: 30px;
+    // color: #777777;
+    dl{
+        float: left;
+        width: 18%;
+        a{
+            color: #777777;
+            font-size: 12px;
+        }
+        & dd :hover {
+            color:red;
+        }
+    }
+    .erweima{
+        width: 105px;
+        float: right;
+        .ma{
+            display: block;
+            background: url(../../src/img/spirite.png);
+            width: 102px;
+            height: 102px;
+            background-position:-276px 0px; 
+        }
+        span{
+            font-size: 14px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    
+}
+.dibu{
+    background: black;
+    height: 156px;
+    .wrapper{
+        width: 1190px;
+        height: 116px;
+        margin: 0 auto;
+        padding: 20px 0;
+        margin-bottom: 10px;
+        ul{
+            display: block;
+            height: 23px;
+            li{
+                float:left;
+                color: #777777;
+                padding-right: 5px;
+                font-size: 12px;
+            }
+        }
+        p{
+            color: #fff;
+            height: 45px;
+            font-size: 12px;
+            line-height: 45px;
+            margin-bottom: 8px;
+            a{
+                color: #fff;
+                margin-right: 8px;
+                margin-top: 40px;
+            }
+            & a:hover{
+                color: red;
+            }
+        }
+        img{
+            width: 114px;
+            height: 42px;
+            padding-right: 5px;
+            vertical-align: middle;
+        }
+        .gongshang{
+            width: 33px;
+            height: 45px;
+        }
+        .banquan{
+            line-height: 2px;
+        }
+    }
+}

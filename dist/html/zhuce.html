@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>金立手机注册页</title>
+    <link rel="stylesheet" href="../css/zhuce.min.css">
+    <script src="../../src/js/es5/jquery-1.12.4.min.js"></script>
+    <script src="../../src/js/es5/zhuce.js"></script>
+</head>
+
+<body>
+    <div id="loginOrRegister">
+        <!--标题-->
+        <div class="title">
+        
+        <form action="" method="" class="registerForm">
+            <ul class="box box2">
+                <li>
+                    <label for="phone">手机</label>
+                    <input type="text" placeholder="请输入您的手机号码" id="phone" maxlength="11" />
+                    <span class="error"></span>
+                </li>
+                <li>
+                    <label for="authCode2">验证码</label>
+                    <input type="text" class="sradd phonekey" id="authCode2" placeholder="请输入收到的验证码" />
+                    <span class="add sendaAuthCode"></span>
+                    <span class="error"></span>
+                </li>
+                <li>
+                    <label for="password2">密码</label>
+                    <input type="password" class="password" id="password2" placeholder="请输入密码" />
+                    <span class="error"></span>
+                </li>
+                <li>
+                    <label for="password3">确认密码</label>
+                    <input type="password" class="email" id="password3" placeholder="请再次输入密码" />
+                    <span class="error"></span>
+                </li>
+            </ul>
+            <div class="submit">
+                <input type="button" value="立即注册" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

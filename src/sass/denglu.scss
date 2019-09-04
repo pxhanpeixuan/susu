@@ -1,0 +1,76 @@
+body{
+    background: url(../../src/img/火狐截图_2019-09-04T02-33-32.624Z.png)
+}
+.denglu{
+    width: 560px;
+    height: 480px;
+    position: absolute;
+    right:-48px;
+    top: 300px;
+    .loginForm {
+        padding: 20px 0px;
+        .submit{
+            input {
+                display: inline-block;
+                width: 300px;
+                background-color: rgb(255, 109, 11);
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                height: 40px;
+                line-height: 40px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 32px;
+            }
+            input:hover{
+                background-color: rgb(220, 109, 11);
+            }
+        }
+        .box {
+            padding-left: 30px;
+        }
+        .box li {
+            line-height: 44px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .box li label {
+            width: 68px;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .box li input{
+            padding: 6px 0;
+            font-size: 16px;
+            width: 296px;
+            height: 28px;
+            line-height: 28px;
+            border: 1px solid #dddddd;
+            text-indent: 0.5em;
+            float: left;
+            border-radius: 5px;
+        }
+        .box li .sradd {
+            width: 148px;
+            text-indent: 4px;
+            font-size: 14px;
+        }
+        .authCode {
+            background: #ff7200;
+            text-align: center;
+            line-height: 42px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            display: inline;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+    }
+}

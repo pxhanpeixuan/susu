@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+//轮播图
+.htmleaf-container{
+    padding-top: 50px;
+    height: 580px;
+}
+.banner{
+    width: 100%;
+    
+    /*height: 560px;*/
+    /*background: black;*/
+    /*子绝父相*/
+    position: relative;
+    /*超出部分全部隐藏，解决横向滚动条*/
+    overflow: hidden;
+}
+.banner ul{
+    position: absolute;
+}
+.banner ul li{
+    /*这个100%是相对于父盒子的（会把父盒子的宽度继承过来,如父盒子300%,这这里的100%就会相当于300%）*/
+    width: 100%;
+    height: 600px;
+    float: left;
+    background:  no-repeat center center;
+}
+/*.banner ul li:nth-child(1){*/
+    /*background: url('./1.jpg') no-repeat center center;*/
+/*}*/
+/*.banner ul li:nth-child(2){*/
+    /*background: url('./2.jpg') no-repeat center center;*/
+/*}*/
+/*.banner ul li:nth-child(3){*/
+    /*background: url('./3.jpg') no-repeat center center;*/
+/*}*/
+.banner ol{
+    /*width: 60px;*/
+    height: 20px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left:50%;
+    /*margin-left: -40px;*/
+    bottom: 30px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.banner ol li{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 5px 5px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner ol .current{
+    background: rgba(255,255,255,1);
+}
+.banner i{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+.banner .left{
+    left: 60px;
+    background: url('../../src/img/left.png')no-repeat ;
+}
+.banner .right{
+    right: 60px;
+    background: url('../../src/img/right.png') no-repeat;
+}
+.banner .left:hover , .banner .right:hover{
+    background-color: rgba(0, 0, 0, 0.31);
+}
+//悬浮区域回到顶部
+    .xuanfu{
+        width: 60px;
+        height: 276px;
+        right: 6px;
+        position: fixed;
+        top: 50%;
+        margin-top: -220px;
+        -background: red;
+        // z-index: 9;
+        .suspend{
+            position: relative;
+            display: block;
+            width: 58px;
+            height: 68px;
+            border: solid 1px #ddd;
+            background: #fff;
+             margin-top: -1px;
+             &:hover a{
+                color: red;
+            }
+            a{
+                position: relative;
+                display: block;
+                width: 58px;
+                height: 28px;
+                padding-top: 40px;
+                overflow: hidden;
+                background: #fff;
+                line-height: 25px;
+                font-size: 12px;
+                text-align: center;
+                color: #000;
+            }
+            p{
+                background: url(../../src/img/ui_service.png) 0 0 no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                top: 10px;
+                left: 14px;
+            }
+        }
+        .suspend1{
+            position: relative;
+            display: block;
+            width: 58px;
+            height: 68px;
+            border: solid 1px #ddd;
+            background: #fff;
+             margin-top: -1px;
+             &:hover a{
+                color: red;
+            }
+            a{
+                position: relative;
+                display: block;
+                width: 58px;
+                height: 28px;
+                padding-top: 40px;
+                overflow: hidden;
+                background: #fff;
+                line-height: 25px;
+                font-size: 12px;
+                text-align: center;
+                color: #000;
+            }
+            p{
+                background: url(../../src/img/ui_service.png) -30px 0 no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                top: 10px;
+                left: 14px;
+            }
+        
+        }
+      
+        .suspend2{
+            position: relative;
+            display: block;
+            width: 58px;
+            height: 68px;
+            border: solid 1px #ddd;
+            background: #fff;
+             margin-top: -1px;
+             &:hover a{
+                color: red;
+            }
+            a{
+                position: relative;
+                display: block;
+                width: 58px;
+                height: 28px;
+                padding-top: 40px;
+                overflow: hidden;
+                background: #fff;
+                line-height: 25px;
+                font-size: 12px;
+                text-align: center;
+                color: #000;
+            }
+            p{
+                background: url(../../src/img/ui_service.png) -60px 0 no-repeat;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                top: 10px;
+                left: 14px;
+            }
+        }
+        .suspend3{
+            position: relative;
+            display: block;
+            width: 58px;
+            height: 68px;
+            border: solid 1px #ddd;
+            background: #fff;
+             margin-top: -1px;
+             &:hover a{
+                color: red;
+            }
+            a{
+                position: relative;
+                display: block;
+                width: 58px;
+                height: 28px;
+                padding-top: 40px;
+                overflow: hidden;
+                background: #fff;
+                line-height: 25px;
+                font-size: 12px;
+                text-align: center;
+                color: #000;
+            }
+            img{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+                top: 10px;
+                left: 14px;
+            }
+        }
+    }
+   
+
+//明星产品区
+.star{
+    width: 100%;
+    height: 451px;
+    margin: 0 auto;
+    .chanpin{
+        width: 1196px;
+        margin: 0px auto;
+        h2{
+            padding: 15px 0;
+            font-size: 40px;
+            letter-spacing: 1px;
+            color: #000;
+            text-align: center;
+        }
+        .img_box {
+            img{
+            float: left;
+            }
+            & a:nth-child(2) img{
+                margin: 0px 10px;
+            }
+        }
+    }
+}
+
+//热卖产品区
+.hot_recommand{
+    width:100%;
+    height:912px;
+    background-color: rgb(229,229,229);
+    // z-index:1;
+    margin: 0 auto;
+    .title{
+        h2{
+            text-align: center;
+            padding-top: 60px;
+            font-size: 30px;
+        }
+        span{
+            a{
+                float: right;
+                margin:14px 170px;
+                color: black;
+            }
+        }
+        &:hover a{
+            color: orangered;
+        }
+    }
+    .hr{
+        width: 1196px;
+        height: 750px;
+        background-color:  rgb(229,229,229);
+        margin: 0 auto;
+        padding-top: 50px;
+        .hr_left {
+            img{
+                height:750px;
+                float: left;
+                margin-right: 10px;
+            }    
+            &:hover{
+                transform:scale(1.01);
+                -ms-transform:scale(1.01); 
+                -moz-transform:scale(1.01); 
+                -webkit-transform:scale(1.01);
+                -o-transform:scale(1.1);
+                -moz-box-shadow: 5px 5px 4px #888888; 
+                box-shadow: 3px 5px 4px #888888;
+            }  
+        }
+        .hr_right{
+            div{
+                width: 290px;
+                height: 372px;
+                background-color: white;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                float: left;
+                img{
+                    width: 120px;
+                    height:240px;
+                }
+                .before{
+                    margin-top: -300px;
+                    margin-left: 85px;
+                    position: relative;
+                    top: -20px;
+                 }
+                 .after{
+                    margin-top: 25px;
+                    margin-left: 85px;
+                }
+                p{
+                    text-align: center;
+                }
+                .title{
+                    color: #0f0e0e;
+                    font-size: 16px;
+                    margin-top: -8px;
+                }
+                .desc{
+                    color: #9E9E9E;
+                    font-size: 14px;
+                    margin-top: 2px;
+                }
+                .price{
+                    color: #fe6a00;
+                    font-size: 24px;
+                    margin-top: 5px;
+                }
+                &:hover .after{
+                    position: relative;
+                    left: 0px;
+                    transition: 2s;
+                }
+                &:hover .before{
+                   
+                    position: relative;
+                    left: 60px;
+                    transition: 2s;
+                }
+            }
+         
+        }
+    
+    }
+}
+//精美区域
+.jingmei{
+    width: 100%;
+    height: 938px;
+    background-color: rgb(229,229,229);
+    h4{
+        text-align: center;
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    span{
+        a{
+            float: right;
+            margin:14px 170px;
+            color: black;
+        }
+        &:hover a{
+            color: orangered;
+        }
+    }
+    .small_box{
+        width: 1196px;
+        height: 778px;
+        background-color:  rgb(229,229,229);
+        margin: 0 auto;
+        padding-top: 60px;
+        div{
+            background-color: white;
+            margin-right: 12px;
+            margin-bottom: 15px;
+            width: 386px;
+            height: 343px;
+            float: left;
+            .img{
+                position: relative;
+            }
+            p{
+                text-align: center;
+                display: block;
+                position: relative;
+                top:-100px;
+            }
+            .jiage{
+                color: #f06261;
+                font-size: 24px;
+                padding-top: 2px;
+            }
+            .mingcheng{
+                color: #0f0e0e;
+                font-size: 16px;
+            }
+            .yongchu{
+                color: #9E9E9E;
+                font-size: 14px;
+                padding-top: 3px;
+            }
+            &:hover{
+                transform:scale(1.02);
+                -ms-transform:scale(1.02); 
+                -moz-transform:scale(1.02); 
+                -webkit-transform:scale(1.02);
+                -o-transform:scale(1.1);
+                -moz-box-shadow: 5px 5px 4px #888888; 
+                box-shadow: 3px 5px 4px #888888;
+            }
+        } 
+    }
+}
+//品牌动态
+.dongtai{
+    width: 100%;
+    padding-bottom: 50px;
+    .keji{
+        width: 1196px;
+        margin: 0 auto;
+        text-align: center;
+        p{
+            padding: 40px 0;
+            font-size: 30px;
+            // letter-spacing: 1px;
+            color: #000;
+        }
+        .shipin{
+            img{
+                margin-right: 9px;
+                margin-bottom: 12px;
+                width: 386px;
+                height: 377px;
+            }
+        }
+    }
+}
+
+
+
